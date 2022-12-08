@@ -10,7 +10,6 @@ function MyTrip(){
     //     getTrips(user._id)
     // }, [])
 
-    
     return(
         <div className="tripsPage">
             <div>
