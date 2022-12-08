@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nps/static/css/main.bbef1421.css",
+    "main.js": "/nps/static/js/main.8d8bdd76.js",
+    "static/media/tripBG.jpeg": "/nps/static/media/tripBG.bdb211cfb431653c1b6f.jpeg",
+    "static/media/statesmap.jpeg": "/nps/static/media/statesmap.76a30146c8d0833fa964.jpeg",
+    "index.html": "/nps/index.html",
+    "main.bbef1421.css.map": "/nps/static/css/main.bbef1421.css.map",
+    "main.8d8bdd76.js.map": "/nps/static/js/main.8d8bdd76.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbef1421.css",
+    "static/js/main.8d8bdd76.js"
+  ]
+}
