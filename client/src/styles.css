@@ -1,0 +1,339 @@
+*{
+    margin:0px;
+    padding:0px
+}
+header {
+    height: 100px;
+    background-color: darkcyan;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 72px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+nav {
+    display: flex;
+    justify-content: flex-start;
+    background-color: darkseagreen;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px 60px;
+    position: fixed;
+    top: 100px;
+    width: 92%;
+    z-index: 1;
+
+}
+.nav-link{
+    margin: 0px 20px;
+}
+.logoutBtn{
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: #02a3a3;
+    border-radius: 8px;
+    padding: 0px 5px;
+
+}
+.logout{
+    margin-left: auto
+}
+main {
+    margin: 128px 0px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.home {
+    width: 400px;
+    margin-left: 20%;
+    grid-column: 2/3
+}
+.favSideBar{
+    width: 90px;
+    height: 100%;
+    background-color: rgba(255,255,255,0.6);
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+.link:hover, .logoutBtn:hover{
+    color: gray;
+}
+.stateMap {
+    display: block;
+    width: 767.562px;
+    margin: auto;
+    align-items: center;
+}
+.buttons{
+    width: 767.562px;
+    height: 70px;
+    margin: auto;
+    margin-top:4px;
+}
+.state {
+    height: 15px;
+    width: 18px;
+    text-align: center;
+    display: inline-block;
+    background-color: beige;
+    border: 1px solid gray;
+    font-size: 12px;
+    color: #645d4d;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    background-color: darkseagreen;
+    color: white;
+    height: 40px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    font-style: italic;
+}
+.login-page{
+    width: 300px;
+    margin: auto;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.6);
+
+}
+.authinputs{
+    display: block;
+    width: 180px;
+    margin: auto;
+    margin-top: 5px
+}
+
+.explore {
+    text-align: center;
+    margin: auto;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exploreBtn {
+    height: 40px;
+    width: 120px;
+    font-size: 30px;
+}
+.parks-list {
+    margin-bottom: 70px;
+
+}
+li {
+    list-style: none;
+    text-align: left;
+}
+h1 {
+    text-align: center;
+    margin: 15px
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: gray
+}
+.state-page{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    width: 600px;
+    margin-left: 150px
+}
+.state-page-title{
+    grid-column: 2/-1;
+}
+.stateImg {
+    align-items: center;
+    margin: auto
+}
+.parks-by-state{
+    grid-column: 2/-1;
+}
+.park-page{
+    grid-column: 2/-1;
+    display: flex;
+    z-index:0;
+    flex-direction: column;
+}
+.park-page h1{
+    color: black;
+    text-shadow: 2px 2px white;
+    border: 2px solid white;
+    background-color: rgba(255,255,255,0.6);
+}
+.park-page-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.park-page-grid p{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.park-page-grid div{
+    margin: 15px;
+    border: 2px solid white;
+    background-color: rgba(255,255,255,0.6);
+    color: black;
+    text-shadow: 2px 2px white;
+
+}
+@media screen and (max-width: 905px) {
+    .state-page {
+        grid-template-columns: 1fr;
+        align-items: center;
+        text-align: center;
+    }
+    .parks-list{
+        width: 500px;
+        margin: auto
+    }
+}
+
+
+.backgroundImages, .backgroundImages:after { 
+    position: fixed;
+    width: 100%;
+    top: 130px;
+    left: 0px;
+    z-index: -1; 
+}
+.backgroundImages li img{
+    width: 100%;
+}
+.backgroundImages li span { 
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: -1;
+    animation: imageAnimation 30s linear infinite 0s; 
+}
+.backgroundImages li:nth-child(2) span { 
+    animation-delay: 6s; 
+}
+.backgroundImages li:nth-child(3) span { 
+    animation-delay: 12s; 
+}
+.backgroundImages li:nth-child(4) span { 
+    animation-delay: 18s; 
+}
+.backgroundImages li:nth-child(5) span { 
+    animation-delay: 24s; 
+}
+.backgroundImages li:nth-child(6) span { 
+    animation-delay: 30s; 
+}
+.home-background, .home-background:after { 
+    position: fixed;
+    width: 100%;
+    top: 130px;
+    left: 0px;
+    z-index: -1; 
+}
+.home-background li img{
+    width: 100%;
+}
+.home-background li span { 
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: -1;
+    animation: imageAnimation 30s linear infinite 0s; 
+}
+.home-background li:nth-child(2) span { 
+    animation-delay: 6s; 
+}
+.home-background li:nth-child(3) span { 
+    animation-delay: 12s; 
+}
+.home-background li:nth-child(4) span { 
+    animation-delay: 18s; 
+}
+.home-background li:nth-child(5) span { 
+    animation-delay: 24s; 
+}
+.home-background li:nth-child(6) span { 
+    animation-delay: 30s; 
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.tripsPage{
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-columns:1fr;
+    background-image: url(./img/tripBG.jpeg);
+}
+
+.tripForm{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-gap: 10px;
+    text-align: right;
+    padding: 10px;
+    background-color: rgba(144,188,143, 0.6);
+    border: 1px solid rgba(144,188,143, 0.6);
+}
+.activities{
+    grid-column: 2/-1;
+}
+.packingList{
+    grid-column: 2/-1;
+}
+
+.favBtn{
+    margin: 0px 10px
+}
+.trip-form-btn{
+    grid-column: 2/-1;
+}
+.completeChkbx{
+    justify-self: start;
+    width: 30px
+}
+.tripCard1{
+    background-color: rgba(144,188,143, 0.5);
+    margin: 5px;
+}
+.tripCard2{
+    border: 1px solid rgb(144,188,143);
+    margin: 5px;
+}
+
+.favLinks{
+    margin-top: 15px
+}
